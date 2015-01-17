@@ -1,0 +1,172 @@
+body {
+     background-image: url("../images/NR-Holder-BG.jpg");
+     background-repeat: repeat;
+     margin: 0;
+     padding: 0;
+}
+.carousel {
+    background-color: rgba(0,0,0,0);
+    position: relative;
+    z-index: 1;
+    margin: auto auto;
+
+}
+.carousel img {
+    width: 100%;
+    min-width: 1000px;
+}
+.main-div {
+    background-color: white;
+    min-height: 2000px;
+    width: 990px;
+    margin: auto auto;
+    position: relative;
+    z-index: 2;
+    margin-top: -78px;
+    border: 5px solid black;
+}
+.locations {
+    border-bottom: 5px solid black;
+    height: 65px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.location {
+    display: inline-block;
+    padding: 25px 40px;
+}
+.categories {
+    height: 175px;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+.category {
+    width: 170px;
+    height: 175px;
+    display: inline-block;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    float: right;
+    padding: 0;
+
+}
+.category img {
+    height: 100%;
+    margin: auto auto;
+    display: block;
+
+}
+.category p {
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+    height: 25px;
+    margin-top: -25px;
+    padding-top: 2px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.variety {
+    width: 280px;
+    height: 164px;
+    margin-right: 0;
+    display: inline-block;
+    text-align: center;
+
+}
+.variety p {
+
+    font-size: 50pt;
+    margin: 2px auto;
+
+}
+.how-to {
+    width: 400px;
+    display: inline-block;
+    margin: 0 0 0 -9px;
+    padding: 0;
+    height: 325px;
+    border-left: 5px solid black;
+}
+.how-to p {
+    font-size: 20pt;
+}
+
+.video-line {
+    width: 100%;
+    height: 325px;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 5px solid black;
+}
+.video {
+    width: 560px;
+    height: 325px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.tree-house {
+    width: 100%;
+    height: 225px;
+    border-bottom: 5px solid black;
+}
+.store {
+    width: 325px;
+    height: 325px;
+    position: relative;
+    display: inline-block;
+    background-color: #AAAAAA;
+    margin-right: 0;
+    margin-bottom: 4px;
+}
+.footer {
+    height: 255px;
+    width: 100%;
+    border-top: 5px solid black;
+    margin-top: -4px;
+}
+.footer-header {
+    height: 60px;
+    width: 100%;
+    border-bottom: 5px solid black;
+    vertical-align: middle;
+}
+.affiliates {
+    width: 765px;
+    height: 100%;
+    border-right: 5px solid black;
+    display: inline-block;
+    font-size: 20pt;
+    margin-left: 20px;
+    vertical-align: middle;
+
+}
+.contact {
+    width: 195px;
+    height: 100%;
+    display: inline-block;
+    font-size: 20pt;
+    text-align: center;
+}
+.store-info {
+    height: 85px;
+    border-bottom: 5px solid black;
+}
+.store-address {
+    height: 85px;
+    border-right: 5px solid black;
+    width: 185px;
+}
+.store-footer {
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+    height: 55px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
