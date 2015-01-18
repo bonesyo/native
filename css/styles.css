@@ -181,16 +181,20 @@ body {
     width: 785px;
     height: 190px;
     border-right: 5px solid black;
+    margin: -16px 0 0 0;
 }
-.contact {
+.contact-header {
     width: 195px;
     height: 100%;
     display: inline-block;
 }
-.contact img {
+.contact-header img {
     margin: 15px 0 0 8px;
     border: 1px solid lime;
     display: block;
+}
+.contact {
+    width: 195px;
 }
 .store-info {
     height: 85px;
@@ -211,4 +215,16 @@ body {
     position: relative;
     z-index: 2;
     margin: 0;
+}
+.more {
+    width: 100%;
+    height: 190px;
+}
+.affiliates li {
+    float: left;
+    list-style: none;
+}
+.affiliates img {
+    width: 50%;
+    margin: 17px 0 0 0;
 }
