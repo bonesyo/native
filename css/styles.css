@@ -11,9 +11,16 @@ body {
     margin: auto auto;
 
 }
-.carousel img {
+.carousel-img {
     width: 100%;
     min-width: 1000px;
+}
+.logo {
+    width: 18%;
+    position: absolute;
+    left: 40%;
+    top: 28px;
+    z-index: 3;
 }
 .main-div {
     background-color: white;
@@ -32,46 +39,62 @@ body {
     margin: 0;
     padding: 0;
 }
-.location {
-    display: inline-block;
-    padding: 25px 40px;
+.locations img {
+    margin-top: 25px;
+    margin-left: 15px;
 }
+
 .categories {
     height: 175px;
     width: 100%;
     border-bottom: 5px solid black;
 }
 .category {
-    width: 170px;
-    height: 175px;
+    width: 168px;
+    height: 150px;
     display: inline-block;
-    border-left: 5px solid black;
     border-bottom: 5px solid black;
+    border-left: 5px solid black;
     float: right;
     padding: 0;
 
 }
 .category img {
-    height: 100%;
-    margin: auto auto;
+    margin: 14px auto;
+    position: relative;
     display: block;
 
+}
+.edibles img {
+    margin-top: 20px;
 }
 .category p {
     background-color: black;
     color: white;
     font-size: 16pt;
     height: 25px;
-    margin-top: -25px;
+    bottom: 1818px;
+    width: 170px;
     padding-top: 2px;
+    margin: 0;
     text-align: center;
-    position: relative;
+    position: absolute;
     z-index: 2;
+}
+.category-name {
+    width: 692px;
+    margin-left: 298px;
+    background-color: black;
+    height: 20px;
+    margin-top: -27px;
+}
+.category-name img {
+    margin: 1px 0 0 50px;
 }
 .variety {
     width: 280px;
     height: 164px;
-    margin-right: 0;
+    margin: 18px auto auto 7px;
     display: inline-block;
     text-align: center;
 
@@ -80,6 +103,7 @@ body {
 
     font-size: 50pt;
     margin: 2px auto;
+    margin-bottom: 0;
 
 }
 .how-to {
@@ -90,8 +114,10 @@ body {
     height: 325px;
     border-left: 5px solid black;
 }
-.how-to p {
-    font-size: 20pt;
+.how-to img {
+    margin-left: 25px;
+    margin-top: 18px;
+    display: block;
 }
 
 .video-line {
@@ -108,20 +134,22 @@ body {
     margin: 0;
     padding: 0;
     display: inline-block;
+    border-right: 5px solid black;
 }
 .tree-house {
     width: 100%;
-    height: 225px;
+    height: 223px;
     border-bottom: 5px solid black;
 }
+.tree-house img {
+    width: 990px
+}
 .store {
-    width: 325px;
-    height: 325px;
+    width: 326px;
+    height: 330px;
     position: relative;
     display: inline-block;
-    background-color: #AAAAAA;
-    margin-right: 0;
-    margin-bottom: 4px;
+    margin: 0;
 }
 .footer {
     height: 255px;
@@ -145,6 +173,9 @@ body {
     vertical-align: middle;
 
 }
+.affiliates img {
+    margin: 10px 0 0 5px;
+}
 .contact {
     width: 195px;
     height: 100%;
@@ -154,6 +185,7 @@ body {
 }
 .store-info {
     height: 85px;
+    width: 330px;
     border-bottom: 5px solid black;
 }
 .store-address {
@@ -165,6 +197,7 @@ body {
     background-color: black;
     color: white;
     font-size: 16pt;
+    width: 330px;
     height: 55px;
     position: relative;
     z-index: 2;
