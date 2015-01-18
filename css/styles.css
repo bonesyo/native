@@ -163,7 +163,7 @@ body {
     border-bottom: 5px solid black;
     vertical-align: middle;
 }
-.affiliates {
+.affiliates-header {
     width: 765px;
     height: 100%;
     border-right: 5px solid black;
@@ -171,17 +171,26 @@ body {
     font-size: 20pt;
     margin-left: 20px;
     vertical-align: middle;
+    margin: -52px 0 0 20px;
 
 }
-.affiliates img {
-    margin: 10px 0 0 5px;
+.affiliates-header img {
+    margin: 14px 0 0 0;
+}
+.affiliates {
+    width: 785px;
+    height: 190px;
+    border-right: 5px solid black;
 }
 .contact {
     width: 195px;
     height: 100%;
     display: inline-block;
-    font-size: 20pt;
-    text-align: center;
+}
+.contact img {
+    margin: 15px 0 0 8px;
+    border: 1px solid lime;
+    display: block;
 }
 .store-info {
     height: 85px;
