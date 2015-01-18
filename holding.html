@@ -7,14 +7,18 @@
     <script type="text/javascript">
         $( document ).ready(function() {
 
-            $('#contact').submit(function(e) {
+            $('form').submit(function(e) {
 
-                console.log('Name:');
-                console.log('Email:');
-                console.log('Message:');
+                $.post('post.php', {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    message: $('#message').val()
+                }).done(function(done) {
+                    console.log(done);
+                });
 
                 event.preventDefault();
-                
+
             });
 
         });
