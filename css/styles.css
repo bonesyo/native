@@ -9,9 +9,28 @@ body {
     position: relative;
     z-index: 1;
     margin: auto auto;
+    overflow: hidden;
 
 }
-.carousel-img {
+.panes {
+    list-style: none;
+    position: relative;
+    width: 500%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+    -moz-animation: carousel 30s infinite;
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
+}
+.panes > li {
+    position: relative;
+    float: left;
+    width: 20%; /* 100 / number of panes */
+}
+.panes img {
+    display: block;
     width: 100%;
     min-width: 1000px;
 }
@@ -19,7 +38,9 @@ body {
     width: 18%;
     position: absolute;
     left: 40%;
-    top: 28px;
+    top: 4%;
+    max-width: 300px;
+    min-width: 100px;
     z-index: 3;
 }
 .main-div {
@@ -29,7 +50,7 @@ body {
     margin: auto auto;
     position: relative;
     z-index: 2;
-    margin-top: -78px;
+    margin-top: -74px;
     border: 5px solid black;
 }
 .locations {
@@ -38,6 +59,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 .locations img {
     margin-top: 25px;
@@ -146,11 +168,61 @@ body {
 }
 .store {
     width: 326px;
-    height: 330px;
+    height: 324px;
     position: relative;
     display: inline-block;
-    margin: 0;
+    margin: 0 0 -4px 0;
 }
+.stores {
+    height: 976px;
+}
+.store img {
+    margin: 18px 0 -4px -2px;
+    display: block;
+}
+.store:hover::after {
+    display: none;
+}
+.store::after {
+    content: '';
+    position: absolute;
+    margin-right: -3px;
+    width: 330px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.store-aspen::after {
+    background-image: url(../images/hover_aspen.png);
+}
+.store-boulder-rec::after {
+    background-image: url(../images/hover_boulder_rec.png);
+}
+.store-boulder-med::after {
+    background-image: url(../images/hover_boulder_medical.png);
+}
+.store-coming-soon::after {
+    background-image: url(../images/hover_coming_soon.png);
+}
+.store-denver::after {
+    background-image: url(../images/hover_denver.png);
+}
+.store-eagle-vail::after {
+    background-image: url(../images/hover_eagle_vail.png);
+}
+.store-frisco::after {
+    background-image: url(../images/hover_frisco.png);
+}
+.store-longmont::after {
+    background-image: url(../images/hover_longmont.png);
+}
+.store-south-denver::after {
+    background-image: url(../images/hover_south_denver.png);
+}
+
 .footer {
     height: 255px;
     width: 100%;
@@ -164,7 +236,7 @@ body {
     vertical-align: middle;
 }
 .affiliates-header {
-    width: 765px;
+    width: 760px;
     height: 100%;
     border-right: 5px solid black;
     display: inline-block;
@@ -175,10 +247,10 @@ body {
 
 }
 .affiliates-header img {
-    margin: 14px 0 0 0;
+    margin: 15px 0 0 0;
 }
 .affiliates {
-    width: 785px;
+    width: 780px;
     height: 190px;
     border-right: 5px solid black;
     margin: -16px 0 0 0;
@@ -189,12 +261,34 @@ body {
     display: inline-block;
 }
 .contact-header img {
-    margin: 15px 0 0 8px;
-    border: 1px solid lime;
+    margin: 15px 0 0 12px;
     display: block;
 }
 .contact {
-    width: 195px;
+    position: absolute;
+    bottom: 18px;
+    left: 790px;
+    width: 200px;
+}
+.contact form {
+    margin-left: 11px;
+}
+.contact input {
+    width: 170px;
+    height: 18px;
+    background-color: #BBB;
+    border: none;
+}
+.contact img {
+    margin: 6px 0 2px 0;
+}
+.contact button {
+    margin: 14px 0 0 61px;
+    background-image: url('../images/contact_us_btn.png');
+    background-color: transparent;
+    width: 111px;
+    height: 23px;
+    border: none;
 }
 .store-info {
     height: 85px;
@@ -227,4 +321,62 @@ body {
 .affiliates img {
     width: 50%;
     margin: 17px 0 0 0;
+}
+
+@-webkit-keyframes carousel{
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+}
+@-moz-keyframes carousel{
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+}
+@keyframes carousel{
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
 }
