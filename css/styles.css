@@ -371,13 +371,6 @@ input.email {
     width: 870px;
     display: block;
 }
-.xgames {
-    width: 120px;
-    position: absolute;
-    bottom: 1233px;
-    left: 865px;
-    z-index: 4;
-}
 
 @-webkit-keyframes carousel{
     0%   { left: 0; }
