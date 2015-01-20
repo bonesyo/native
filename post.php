@@ -5,6 +5,6 @@
     $message = $_POST['message'];
 
     $header = "From: ". $name . " <" . $email . ">\r\n";
-    $subject = 'Native Roots - Submission Form';
+    $subject = 'Native Roots - Form Submission';
 
-    mail('nparsons08@gmail.com', $subject, $message, $header);
+    mail('info@nativeroots303.com', $subject, $message, $header);

@@ -37,7 +37,7 @@ body {
 .logo {
     width: 18%;
     position: absolute;
-    left: 40%;
+    left: 41%;
     top: 4%;
     max-width: 300px;
     min-width: 100px;
@@ -274,10 +274,19 @@ body {
     margin-left: 11px;
 }
 .contact input {
-    width: 170px;
+    width: 166px;
     height: 18px;
+    color: #f3f3f3;
+    padding-left: 4px;
+    padding-right: 4px;
     background-color: #BBB;
     border: none;
+}
+input.name {
+    text-transform: capitalize;
+}
+input.email {
+    text-transform: lowercase;
 }
 .contact img {
     margin: 6px 0 2px 0;
@@ -317,10 +326,67 @@ body {
 .affiliates li {
     float: left;
     list-style: none;
+    width: 175px;
 }
 .affiliates img {
-    width: 50%;
-    margin: 17px 0 0 0;
+    width: 40%;
+    margin: 12px 0 0 42px;
+}
+.imedicate {
+    margin: 33px 0 0 25px !important;
+    width: 120px !important;
+}
+.n-pen {
+    width: 20% !important;
+    margin: 12px 0 0 233px !important;
+}
+.foria {
+    width: 69% !important;
+    margin: 3px 0 0 112px !important;
+}
+.age {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+
+}
+.age-modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 101;
+}
+.age-content {
+    position: relative;
+    width: 450px;
+    margin: auto auto;
+    margin-top: 15%;
+    padding: 40px;
+    background-color: rgba(0,0,0,.9);
+    z-index: 102;
+    color: rgba(255,255,255,.9);
+    font-family: "Open Sans";
+    border: 1px solid #333;
+}
+.age-content button {
+    background-color: green;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin: 20px 7px 0 7px;
+    font-size: 12pt;
+    color: rgba(255,255,255,.7);
+    font-family: "Open Sans";
+}
+.age-logo {
+    width: 100px;
 }
 
 @-webkit-keyframes carousel{
