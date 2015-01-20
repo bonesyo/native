@@ -15,24 +15,25 @@ body {
 .panes {
     list-style: none;
     position: relative;
-    width: 500%;
+    width: 1000%;
     overflow: hidden;
     padding: 0;
     margin: 0;
 
-    -moz-animation: carousel 30s infinite;
-    -webkit-animation: carousel 30s infinite;
-    animation: carousel 30s infinite;
+    -moz-animation: carousel 90s infinite;
+    -webkit-animation: carousel 90s infinite;
+    animation: carousel 90s infinite;
 }
 .panes > li {
     position: relative;
     float: left;
-    width: 20%; /* 100 / number of panes */
+    width: 10%; /* 100 / number of panes */
 }
 .panes img {
     display: block;
     width: 100%;
     min-width: 1000px;
+    max-height: 650px;
 }
 .logo {
     width: 18%;
@@ -161,10 +162,8 @@ body {
 .tree-house {
     width: 100%;
     height: 223px;
+    display: inline-block;
     border-bottom: 5px solid black;
-}
-.tree-house img {
-    width: 990px
 }
 .store {
     width: 326px;
@@ -299,26 +298,6 @@ input.email {
     height: 23px;
     border: none;
 }
-.store-info {
-    height: 85px;
-    width: 330px;
-    border-bottom: 5px solid black;
-}
-.store-address {
-    height: 85px;
-    border-right: 5px solid black;
-    width: 185px;
-}
-.store-footer {
-    background-color: black;
-    color: white;
-    font-size: 16pt;
-    width: 330px;
-    height: 55px;
-    position: relative;
-    z-index: 2;
-    margin: 0;
-}
 .more {
     width: 100%;
     height: 190px;
@@ -388,61 +367,132 @@ input.email {
 .age-logo {
     width: 100px;
 }
+.banner {
+    width: 870px;
+    display: block;
+}
+.xgames {
+    width: 120px;
+    position: absolute;
+    bottom: 1233px;
+    left: 865px;
+    z-index: 4;
+}
 
 @-webkit-keyframes carousel{
-    0%    { left: 0; }
-    11%   { left: 0; }
-    12.5% { left: -100%; }
-    23.5% { left: -100%; }
-    25%   { left: -200%; }
-    36%   { left: -200%; }
-    37.5% { left: -300%; }
-    48.5% { left: -300%; }
-    50%   { left: -400%; }
-    61%   { left: -400%; }
-    62.5% { left: -300%; }
-    73.5% { left: -300%; }
-    75%   { left: -200%; }
-    86%   { left: -200%; }
-    87.5% { left: -100%; }
-    98.5% { left: -100%; }
-    100%  { left: 0; }
+    0%   { left: 0; }
+    4%   { left: 0; }
+    5%   { left: -100%; }
+    9%   { left: -100%; }
+    10%  { left: -200%; }
+    14%  { left: -200%; }
+    15%  { left: -300%; }
+    19%  { left: -300%; }
+    20%  { left: -400%; }
+    24%  { left: -400%; }
+    25%  { left: -500%; }
+    29%  { left: -500%; }
+    30%  { left: -600%; }
+    34%  { left: -600%; }
+    35%  { left: -700%; }
+    39%  { left: -700%; }
+    40%  { left: -800%; }
+    44%  { left: -800%; }
+    45%  { left: -900%; }
+    49%  { left: -900%; }
+    50%  { left: -800%; }
+    54%  { left: -800%; }
+    55%  { left: -700%; }
+    59%  { left: -700%; }
+    60%  { left: -600%; }
+    64%  { left: -600%; }
+    65%  { left: -500%; }
+    69%  { left: -500%; }
+    70%  { left: -400%; }
+    75%  { left: -400%; }
+    76%  { left: -300%; }
+    81%  { left: -300%; }
+    82%  { left: -200%; }
+    87%  { left: -200%; }
+    88%  { left: -100%; }
+    99%  { left: -100%; }
+    100% { left: 0; }
 }
 @-moz-keyframes carousel{
-    0%    { left: 0; }
-    11%   { left: 0; }
-    12.5% { left: -100%; }
-    23.5% { left: -100%; }
-    25%   { left: -200%; }
-    36%   { left: -200%; }
-    37.5% { left: -300%; }
-    48.5% { left: -300%; }
-    50%   { left: -400%; }
-    61%   { left: -400%; }
-    62.5% { left: -300%; }
-    73.5% { left: -300%; }
-    75%   { left: -200%; }
-    86%   { left: -200%; }
-    87.5% { left: -100%; }
-    98.5% { left: -100%; }
-    100%  { left: 0; }
+    0%   { left: 0; }
+    4%   { left: 0; }
+    5%   { left: -100%; }
+    9%   { left: -100%; }
+    10%  { left: -200%; }
+    14%  { left: -200%; }
+    15%  { left: -300%; }
+    19%  { left: -300%; }
+    20%  { left: -400%; }
+    24%  { left: -400%; }
+    25%  { left: -500%; }
+    29%  { left: -500%; }
+    30%  { left: -600%; }
+    34%  { left: -600%; }
+    35%  { left: -700%; }
+    39%  { left: -700%; }
+    40%  { left: -800%; }
+    44%  { left: -800%; }
+    45%  { left: -900%; }
+    49%  { left: -900%; }
+    50%  { left: -800%; }
+    54%  { left: -800%; }
+    55%  { left: -700%; }
+    59%  { left: -700%; }
+    60%  { left: -600%; }
+    64%  { left: -600%; }
+    65%  { left: -500%; }
+    69%  { left: -500%; }
+    70%  { left: -400%; }
+    75%  { left: -400%; }
+    76%  { left: -300%; }
+    81%  { left: -300%; }
+    82%  { left: -200%; }
+    87%  { left: -200%; }
+    88%  { left: -100%; }
+    99%  { left: -100%; }
+    100% { left: 0; }
 }
 @keyframes carousel{
-    0%    { left: 0; }
-    11%   { left: 0; }
-    12.5% { left: -100%; }
-    23.5% { left: -100%; }
-    25%   { left: -200%; }
-    36%   { left: -200%; }
-    37.5% { left: -300%; }
-    48.5% { left: -300%; }
-    50%   { left: -400%; }
-    61%   { left: -400%; }
-    62.5% { left: -300%; }
-    73.5% { left: -300%; }
-    75%   { left: -200%; }
-    86%   { left: -200%; }
-    87.5% { left: -100%; }
-    98.5% { left: -100%; }
-    100%  { left: 0; }
+    0%   { left: 0; }
+    4%   { left: 0; }
+    5%   { left: -100%; }
+    9%   { left: -100%; }
+    10%  { left: -200%; }
+    14%  { left: -200%; }
+    15%  { left: -300%; }
+    19%  { left: -300%; }
+    20%  { left: -400%; }
+    24%  { left: -400%; }
+    25%  { left: -500%; }
+    29%  { left: -500%; }
+    30%  { left: -600%; }
+    34%  { left: -600%; }
+    35%  { left: -700%; }
+    39%  { left: -700%; }
+    40%  { left: -800%; }
+    44%  { left: -800%; }
+    45%  { left: -900%; }
+    49%  { left: -900%; }
+    50%  { left: -800%; }
+    54%  { left: -800%; }
+    55%  { left: -700%; }
+    59%  { left: -700%; }
+    60%  { left: -600%; }
+    64%  { left: -600%; }
+    65%  { left: -500%; }
+    69%  { left: -500%; }
+    70%  { left: -400%; }
+    75%  { left: -400%; }
+    76%  { left: -300%; }
+    81%  { left: -300%; }
+    82%  { left: -200%; }
+    87%  { left: -200%; }
+    88%  { left: -100%; }
+    99%  { left: -100%; }
+    100% { left: 0; }
 }

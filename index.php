@@ -58,6 +58,11 @@
             <li><img src="./images/slide-3.jpg"/></li>
             <li><img src="./images/slide-4.jpg"/></li>
             <li><img src="./images/slide-5.jpg"/></li>
+            <li><img src="./images/slide-6.png"/></li>
+            <li><img src="./images/slide-7.png"/></li>
+            <li><img src="./images/slide-8.png"/></li>
+            <li><img src="./images/slide-9.png"/></li>
+            <li><img src="./images/slide-9.png"/></li>
         </ul>
         <img class="logo" src="./images/logo.png"/>
     </div>
@@ -98,7 +103,15 @@
             </div>
         </div>
         <div class="tree-house">
-            <img src="./images/tree_house_banner.png"/>
+            <div class="banner">
+                <img src="./images/tree_house_banner_crop2.png" usemap="#map-tree-house"/>
+                <map name="map-tree-house" id="map-tree-house">
+                    <area title="click-for-more" href="#" shape="rect" coords="310,187,659,207" />
+                </map>
+            </div>
+            <div class="xgames">
+                <img src="./images/x-games.png"/>
+            </div>
         </div>
 
         <div class="stores" id="stores">
