@@ -107,7 +107,7 @@
         </div>
 
         <div class="stores" id="stores">
-            <div class="store store-denver">
+            <div class="store store-denver" onclick="">
                 <img src="./images/location_denver.png" usemap="#map-denver"/>
                 <map name="map-denver" id="map-denver">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-apotherary-adult-use" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -116,7 +116,7 @@
 
                 </map>
             </div>
-            <div class="store store-boulder-rec">
+            <div class="store store-boulder-rec" onclick="">
                 <img src="./images/location_boulder.png" usemap="#map-boulder"/>
                 <map name="map-boulder" id="map-boulder">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-boulder" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -126,7 +126,7 @@
                 </map>
             </div>
 
-            <div class="store store-boulder-med">
+            <div class="store store-boulder-med" onclick="">
                 <img src="./images/location_dandelion.png" usemap="#map-dandelion"/>
                 <map name="map-dandelion" id="map-dandelion">
                     <area title="menu" href="//weedmaps.com/dispensaries/colorado/boulder/the-dandelion-locally-owned-grown-best-of-boulder-county-2010-2011" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -135,7 +135,7 @@
 
                 </map>
             </div>
-            <div class="store store-eagle-vail">
+            <div class="store store-eagle-vail" onclick="">
                 <img src="./images/location_vail.png" usemap="#map-vail"/>
                 <map name="map-vail" id="map-vail">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-vail" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -144,7 +144,7 @@
 
                 </map>
             </div>
-            <div class="store store-frisco">
+            <div class="store store-frisco" onclick="">
                 <img src="./images/location_frisco.png" usemap="#map-frisco"/>
                 <map name="map-frisco" id="map-frisco">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-frisco-silverthorne-mmj-recreational" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -153,7 +153,7 @@
 
                 </map>
             </div>
-            <div class="store store-longmont">
+            <div class="store store-longmont" onclick="">
                 <img src="./images/location_longmont.png" usemap="#map-longmont"/>
                 <map name="map-longmont" id="map-longmont">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-longmont" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -162,7 +162,7 @@
 
                 </map>
             </div>
-            <div class="store store-south-denver">
+            <div class="store store-south-denver" onclick="">
                 <img src="./images/location_south_denver.png" usemap="#map-south"/>
                 <map name="map-south" id="map-south">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-apotherary-adult-use" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -171,7 +171,7 @@
 
                 </map>
             </div>
-            <div class="store store-aspen">
+            <div class="store store-aspen" onclick="">
                 <img src="./images/location_aspen.png" usemap="#map-aspen"/>
                 <map name="map-aspen" id="map-aspen">
                     <area title="menu" href="//weedmaps.com/dispensaries/native-roots-aspen" target="_blank" shape="rect" coords="2,244,206,304"/>
@@ -180,7 +180,7 @@
 
                 </map>
             </div>
-            <div class="store store-coming-soon">
+            <div class="store store-coming-soon" onclick="">
                 <img src="./images/location_coming_soon.png"/>
             </div>
 

@@ -171,6 +171,7 @@ body {
     position: relative;
     display: inline-block;
     margin: 0 0 -4px 0;
+    cursor: pointer;
 }
 .stores {
     height: 976px;
@@ -179,7 +180,7 @@ body {
     margin: 18px 0 -4px -2px;
     display: block;
 }
-.store:hover::after {
+.store:hover::after, .store:active::after {
     display: none;
 }
 .store::after {
@@ -192,6 +193,7 @@ body {
     top: 0;
     bottom: 0;
     z-index: 4;
+    cursor: pointer;
 }
 
 .store-aspen::after {
